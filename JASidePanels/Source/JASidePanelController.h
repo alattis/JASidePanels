@@ -121,11 +121,13 @@ typedef enum _JASidePanelState {
 
 #pragma mark - Menu Buttons
 
-// Gives you an image to use for your menu button. The image is three stacked white lines, similar to Path 2.0 or Facebook's menu button.
-+ (UIImage *)defaultImage;
+// Gives you an image to use for your menu buttons. The image is three stacked white lines, similar to Path 2.0 or Facebook's menu button.
++ (UIImage *)defaultLeftImage;
++ (UIImage *)defaultRightImage;
 
-// Default button to place in gestureViewControllers top viewController. Override in sublcass to change look of default button
+// Default buttons to place in gestureViewControllers top viewController. Override in sublcass to change look of default button
 - (UIBarButtonItem *)leftButtonForCenterPanel;
+- (UIBarButtonItem *)rightButtonForCenterPanel;
 
 #pragma mark - Nuts & Bolts
 
